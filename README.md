@@ -14,40 +14,40 @@ console.log(skills);
 <div>  </div> > <div id="cursor" class="blinking-cursor">_</div>
 
 <style>
-  .blinking-cursor {
-    position: relative;
-    display: inline-block;
-  }
-  
-  #cursor {
-    transition: opacity 0.5s;
-  }
-  
-  #cursor:before {
-    content: '_';
-    position: absolute;
-    left: 0;
-    right: 0;
-    text-align: center;
-  }
-  
-  @keyframes blink {
-    0% {
-      opacity: 1;
-    }
-    
-    50% {
-      opacity: 0;
-    }
-    
-    100% {
-      opacity: 1;
-    }
-  }
-  
-  #cursor {
-    animation: blink 2s infinite;
-  }
+.blinking-cursor {
+position: relative;
+display: inline-block;
+}
+
+#cursor {
+transition: opacity 0.5s;
+}
+
+#cursor:before {
+content: '_';
+position: absolute;
+left: 0;
+right: 0;
+text-align: center;
+}
+
+@keyframes blink {
+0% {
+    opacity: 1;
+}
+
+50% {
+    opacity: 0;
+}
+
+100% {
+    opacity: 1;
+}
+}
+
+#cursor {
+animation: blink 2s infinite;
+}
 </style>
 
 
